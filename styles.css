@@ -58,7 +58,7 @@ h1 {
     font-size: 2rem; 
 }
 
-button, .file-button {
+button {
     padding: 0.5rem 1rem; 
     font-size: 1rem; 
     font-family: "Rowdies", sans-serif;
@@ -69,20 +69,43 @@ button, .file-button {
     cursor: pointer;
 }
 
-button:hover, .file-button:hover {
+button:hover {
     border: 1px solid white;
     background-color: #991717;
 }
 
+.file-button{
+    padding: 0.5rem 1rem; 
+}
+.file-button:hover{
+    cursor: pointer;
+    color:#46b0ee;
+}
+
 .file-input-style {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
     gap: var(--element-spacing);
     margin-bottom: var(--element-spacing);
-    border: 1px solid #ccc;
+    border: 1px dotted #ccc;
     border-radius: 5px;
     padding: 5px;
+    background-color: #777676;
+    transition: background-color 0.6s ease;
+}
+
+.file-input-style.dragover{
+    background-color: rgb(139, 141, 139);
+    border: 1px solid #d2d4d3;
+    box-shadow: 0 0 5px yellowgreen;
+    padding: 10px;
+}
+
+#file-input{
+    display: none;
 }
 
 input[type="text"] {

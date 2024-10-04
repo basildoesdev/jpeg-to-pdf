@@ -16,11 +16,13 @@
 <body>
     <div class="container">
         <h1><span class="red">JPEG</span> to <span class="red">PDF</span> Converter</h1><br/>
-        <div class="file-input-style">
-            <label for="file-input" class="file-button">Choose File</label>
+        
+        <div id="file-drop-area" class="file-input-style" >
+            <label for="file-input" class="file-button"> 📂 browse..</label>
             <input type="file" id="file-input" accept="image/jpeg" />
             <span id="file-name">No file chosen</span>
         </div>
+
         <input id="name" type="text" placeholder="Name your file"/>
         <div class="checkbox-container">
             <input type="checkbox" id="centered" />
