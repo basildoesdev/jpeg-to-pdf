@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/leaf.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content="Convert JPEG/JPG files to PDF files">
+    <meta name="keywords" content="JPEG, JPG, converter, App, Basil">
+    <meta name="author" content="Basil Bombers">
+    <meta property="og:title" content="JPEG to PDF Converter">
+    <meta property="og:description" content="Convert JPEG/JPG files to PDF files">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="red">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basil | JPEG to PDF Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="red">JPEG</span> to <span class="red">PDF</span> Converter</h1><br/>
+        <div class="file-input-style">
+            <label for="file-input" class="file-button">Choose File</label>
+            <input type="file" id="file-input" accept="image/jpeg" />
+            <span id="file-name">No file chosen</span>
+        </div>
+        <input id="name" type="text" placeholder="Name your file"/>
+        <div class="checkbox-container">
+            <input type="checkbox" id="centered" />
+            <label for="centered">Center image on PDF</label>
+        </div>
+        <button id="convert-btn">Convert to PDF</button>
+        
+        <p id="faq" class="faq">JPEG vs JPG?</p>
+        <p id="ans" class="answer">
+            The distinction lies solely in their naming;<br>
+            JPG was used when file systems limited extensions to three characters.<br>
+            Their functionality and compatibility are identical.
+        </p>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="scripts.js"></script>
+</html>
